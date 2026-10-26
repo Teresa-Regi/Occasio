@@ -1,7 +1,4 @@
-/* ==============================
-   OCCASIO - EVENT MANAGEMENT
-   Modern dashboard styling
-================================ */
+
 
 #root {
   min-height: 100vh;
@@ -19,7 +16,7 @@
   color: #292640;
 }
 
-/* SIDEBAR */
+
 
 .sidebar {
   width: 255px;
@@ -206,7 +203,7 @@
   margin-left: auto;
 }
 
-/* MAIN CONTENT */
+
 
 .main-area {
   flex: 1;
@@ -255,7 +252,7 @@
   margin-left: 15px;
 }
 
-/* PAGE CONTENT */
+
 
 .page-content {
   width: 100%;
@@ -307,7 +304,7 @@
   color: #8b879e;
 }
 
-/* BUTTONS */
+
 
 .primary-btn {
   display: inline-flex;
@@ -338,7 +335,7 @@
   transform: none;
 }
 
-/* STATISTICS */
+
 
 .stats-grid {
   display: grid;
@@ -525,7 +522,7 @@
   cursor: pointer;
 }
 
-/* TABLE */
+
 
 .table-wrapper {
   width: 100%;
@@ -1077,7 +1074,7 @@ td {
   }
 }
 
-/* OCCASIO LIVE EVENT PREVIEW */
+
 
 .event-preview {
   max-width: 780px;

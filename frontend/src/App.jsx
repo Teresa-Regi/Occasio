@@ -29,7 +29,7 @@ import "./App.css";
 
 const API = "http://localhost:5000/api/events";
 
-// SIDEBAR
+
 function Sidebar() {
   return (
     <aside className="sidebar">
@@ -94,7 +94,7 @@ function Sidebar() {
   );
 }
 
-// DASHBOARD
+
 function Dashboard() {
   const [events, setEvents] = useState([]);
   const [search, setSearch] = useState("");
@@ -118,7 +118,7 @@ function Dashboard() {
     fetchEvents();
   }, []);
 
-  // DELETE EVENT
+ 
   const deleteEvent = async (id) => {
     if (!window.confirm("Are you sure you want to delete this event?")) {
       return;
@@ -424,7 +424,7 @@ function Dashboard() {
   );
 }
 
-// ADD / EDIT EVENT FORM
+
 function EventForm({ editing = false }) {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -440,7 +440,7 @@ function EventForm({ editing = false }) {
   const [previewMode, setPreviewMode] = useState(true);
   const [loadingEvent, setLoadingEvent] = useState(editing);
 
-  // LOAD EXISTING EVENT
+  
   useEffect(() => {
     if (!editing) return;
 
@@ -481,7 +481,7 @@ function EventForm({ editing = false }) {
     });
   };
 
-  // CREATE OR UPDATE EVENT
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     setSaving(true);
@@ -712,7 +712,7 @@ function DashboardLayout() {
     </div>
   );
 }
-// MAIN LAYOUT
+
 function Layout() {
   return (
     <Routes>
@@ -730,7 +730,7 @@ function Layout() {
   );
 }
 
-// APP ENTRY POINT
+
 export default function App() {
   return (
     <BrowserRouter>
