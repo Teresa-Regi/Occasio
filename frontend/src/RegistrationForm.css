@@ -1,0 +1,139 @@
+.registration-page {
+  min-height: 100vh;
+  padding: 35px 20px 60px;
+  background: #faf8fc;
+  color: #30243e;
+}
+
+.registration-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  border: none;
+  background: transparent;
+  color: #7252b5;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.registration-card {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 38px;
+  border: 1px solid #eee7f5;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 18px 50px rgba(48, 36, 62, 0.07);
+}
+
+.registration-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+  place-items: center;
+  border-radius: 17px;
+  background: #f0eafa;
+  color: #7252b5;
+}
+
+.registration-eyebrow {
+  color: #7252b5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.registration-card h1 {
+  margin: 12px 0;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.registration-description {
+  margin-bottom: 28px;
+  color: #777080;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.registration-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-card label {
+  margin: 15px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.registration-card input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #e5deed;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #30243e;
+  font: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.registration-card input:focus {
+  border-color: #7252b5;
+  box-shadow: 0 0 0 3px rgba(114, 82, 181, 0.1);
+}
+
+.registration-submit {
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 11px;
+  background: #7252b5;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.registration-submit:hover {
+  background: #5c4098;
+}
+
+.registration-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.registration-message {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 9px;
+  background: #f0f8e5;
+  color: #365b24;
+  font-size: 14px;
+}
+
+.registration-note {
+  margin-top: 22px;
+  color: #88808f;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .registration-card {
+    padding: 25px 20px;
+  }
+
+  .registration-card h1 {
+    font-size: 28px;
+  }
+}

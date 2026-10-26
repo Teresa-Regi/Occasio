@@ -1,0 +1,30 @@
+const mongoose = require("mongoose");
+
+const eventSchema = new mongoose.Schema(
+  {
+    eventName: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    eventDate: {
+      type: Date,
+      required: true,
+    },
+    venue: {
+      type: String,
+      required: true,
+    },
+    totalRegistrations: {
+      type: Number,
+      default: 0,
+    },
+  },
+  { timestamps: true }
+);
+
+module.exports = mongoose.model("Event", eventSchema);
